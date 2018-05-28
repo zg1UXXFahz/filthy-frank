@@ -1,8 +1,9 @@
 """
-	Main game file
+	main game file
 """
 
 from core.util.console import Console
+from core.player.player import Player
 
 class Game(object):
 
@@ -14,7 +15,7 @@ class Game(object):
 
 		super(Game, self).__init__()
 
-		#
+		self.player = Player()
 
 	def start(self):
 
@@ -22,4 +23,5 @@ class Game(object):
 			Start a new game
 		"""
 
-		Console.out("\tTest")
+		Console.dialogue("You slowly emerge from the darkness.")
+		Console.dialogue("The ground parts beneath your feet, rocks slip through the cracks.")

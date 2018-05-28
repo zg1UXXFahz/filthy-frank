@@ -14,7 +14,7 @@ class Console(object):
 			custom print out
 		"""
 
-		print(text)
+		print text
 
 	@staticmethod
 	def get(question=""):
@@ -23,5 +23,22 @@ class Console(object):
 			custom get input
 		"""
 
-		print(question)
+		print question
 		return input()
+
+	@staticmethod
+	def dialogue(text):
+
+		"""
+			print dialogue and wait for enter
+		"""
+
+		if isinstance(text, str):
+
+			raw_input("%s " % text)
+
+		elif isinstance(text, list):
+
+			for i in text:
+
+				raw_input(i)
