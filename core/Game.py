@@ -2,6 +2,8 @@
 	Main game file
 """
 
+from core.util.console import Console
+
 class Game(object):
 
 	"""
@@ -12,4 +14,12 @@ class Game(object):
 
 		super(Game, self).__init__()
 
-		print "Game initialised."
+		#
+
+	def start(self):
+
+		"""
+			Start a new game
+		"""
+
+		Console.out("\tTest")

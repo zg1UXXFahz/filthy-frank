@@ -2,7 +2,7 @@
 	Entry file for game
 """
 
-from core.Game import Game
+from core.game import Game
 
 def main():
 
@@ -11,6 +11,7 @@ def main():
 	"""
 
 	game = Game()
+	game.start()
 
 if __name__ == '__main__':
 	main()
